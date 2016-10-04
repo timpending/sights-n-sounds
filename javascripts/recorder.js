@@ -70,7 +70,7 @@ if (navigator.getUserMedia){
         clipContainer.appendChild(audio);
         clipContainer.appendChild(clipLabel);
         clipContainer.appendChild(deleteButton);
-        sound-clips.appendChild(clipContainer);
+        soundClips.appendChild(clipContainer);
 
 
         audio.controls = true;
