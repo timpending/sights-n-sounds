@@ -74,7 +74,7 @@ if (navigator.getUserMedia){
 
 
         audio.controls = true;
-        var blob = new Blob(pieces, { 'type' : 'audio/ogg; codecs=opus' });
+        var blob = new Blob(pieces, { 'type' : 'audio/wav; codecs=opus' });
         pieces = [];
         var audioURL = window.URL.createObjectURL(blob);
         audio.src = audioURL;
