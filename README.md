@@ -1,6 +1,12 @@
 # Capstone Submission - TIM PENDER
 Submit your capstone ideas here for approval. Fork, clone, and send a pull request with these details about your app:
 
+# Technologies Being Used:
+- MediaRecorder API
+- AudioContext API
+- CSS3 / SASS
+- HTML5
+
 # IDEA 1. SoundSight (Working Title)
 * A brief description of your project
 Responsive web application that will allow users to record or upload sounds recordings to the application.  Application would then analyze the input and reflect the sound waves visually.  Custom UI would allow the users to edit the base color scheme, wave type, wave output in a visually pleasing and intuitive way (MVP).  Ideally users would be able to save the output, and then turn it into a print or t-shirt (advanced features).  
@@ -42,7 +48,7 @@ The recording upload and the visualization of what was recorded.  UI to control 
 - Power Ups - wall destruction, score booster
 - Sound
 - Impactful visual effects
-- 
+-
 
 
 
