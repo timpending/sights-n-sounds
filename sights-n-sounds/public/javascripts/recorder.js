@@ -15,7 +15,7 @@ if (navigator.getUserMedia){
   console.log('getMedia supported');
 
   var audioOnly = {audio: true};
-  var chunks = [];
+  var pieces = [];
 
     // Successful cb
     var onSuccess = function(stream){
@@ -38,7 +38,6 @@ if (navigator.getUserMedia){
         mediaRecorder.stop();
         console.log('stop state -'+ mediaRecorder.state);
         console.log('recording stopped');
-        record.style.background = 'green';
         // mediaRecord.requestData();
 
         stop.disabled = true;
@@ -71,12 +70,12 @@ if (navigator.getUserMedia){
         clipContainer.appendChild(audio);
         clipContainer.appendChild(clipLabel);
         clipContainer.appendChild(deleteButton);
-        soundClips.appendChild(clipContainer);
+        sound-clips.appendChild(clipContainer);
 
 
         audio.controls = true;
-        var blob = new Blob(chunks, { 'type' : 'audio/wav; codecs=opus' });
-        chunks = [];
+        var blob = new Blob(pieces, { 'type' : 'audio/ogg; codecs=opus' });
+        pieces = [];
         var audioURL = window.URL.createObjectURL(blob);
         audio.src = audioURL;
         console.log('recording stopped');
@@ -98,7 +97,7 @@ if (navigator.getUserMedia){
     }
 
     mediaRecorder.ondataavailable = function(e){
-      chunks.push(e)
+      pieces.push(e)
     }
   }
       var onError = function(err){

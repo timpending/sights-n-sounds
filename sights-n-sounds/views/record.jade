@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  p= title
+  p Welcome to #{title}
+  br
+  div.header
+  
+  section.controls
+    div.rec
+      button.record RECORD
+    div.recRtop
+      button.stop STOP
+            
+  section.sound-clips
+    
+  script(src='/javascripts/recorder.js')
