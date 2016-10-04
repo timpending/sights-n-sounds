@@ -6,7 +6,7 @@ navigator.getUserMedia = navigator.getUserMedia ||
 
 var record = document.querySelector('.record');
 var stop = document.querySelector('.stop');
-var output = document.querySelector('.output');
+var soundClips = document.querySelector('.sound-clips');
 
 stop.disabled = true;
 
@@ -70,7 +70,7 @@ if (navigator.getUserMedia){
         clipContainer.appendChild(audio);
         clipContainer.appendChild(clipLabel);
         clipContainer.appendChild(deleteButton);
-        output.appendChild(clipContainer);
+        sound-clips.appendChild(clipContainer);
 
 
         audio.controls = true;
